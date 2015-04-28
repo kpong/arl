@@ -1,0 +1,17 @@
+DROP SEQUENCE ARL_Document_seq ; 
+create sequence ARL_Document_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARL_Document_PK_trig 
+; 
+
+create or replace trigger ARL_Document_PK_trig 
+before insert on ARL_Document
+for each row 
+begin 
+select ARL_Document_seq.nextval into :new.document_id from dual; 
+end; 
+/
+

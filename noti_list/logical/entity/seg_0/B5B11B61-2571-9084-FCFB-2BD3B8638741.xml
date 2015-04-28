@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B5B11B61-2571-9084-FCFB-2BD3B8638741" name="ARL_employee">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:35:52 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="emp_id" id="0FFE904B-8433-2F69-9AEB-AF091377DDE4">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:36:07 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="714C2FEF-ADF7-E3D3-B20D-F19B652DC293">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 03:00:28 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="status" id="DE9A4923-24E4-3CD4-B7F5-3243690F8428">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 03:01:59 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+</Attribute>
+<Attribute name="lab" id="64A289CC-0703-13F0-A8F6-1424581CB7E7">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 03:01:28 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="division" id="BBA81B57-B181-F7DB-8BD3-97EFE9013F80">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 03:00:43 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+</Attribute>
+<Attribute name="mem_id" id="D230EAB5-8861-3665-696A-F8A109D44665">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:37:19 UTC</createdTime>
+<generatorID>42CE6010-E113-6D4A-F437-A3E17A7E6C82</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C724A697-B0F1-D137-601E-F1756B174343</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="598FE297-4F39-F955-7675-4AF86AB03E5C" name="{entity} PK">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:36:28 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0FFE904B-8433-2F69-9AEB-AF091377DDE4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

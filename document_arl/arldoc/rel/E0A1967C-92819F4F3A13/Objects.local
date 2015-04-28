@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="734F0860-176F-FFF4-C7AB-AE73446C6545" name="ARL_Document" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

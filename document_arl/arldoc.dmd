@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="arldoc" id="425B17B7-5B9A-48E8-1D99-2319F1E42E53" version="3.5">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-26 23:26:48 UTC</createdTime>
+<ownerDesignName>arldoc</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>425B17B7-5B9A-48E8-1D99-2319F1E42E53</designId>
+</OSDM_Design>

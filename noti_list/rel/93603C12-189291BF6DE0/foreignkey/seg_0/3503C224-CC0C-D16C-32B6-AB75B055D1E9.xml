@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3503C224-CC0C-D16C-32B6-AB75B055D1E9" name="ARL_notilist_ARL_member_FK">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>A916CFA3-9BA1-46DE-2BCB-C86DA87F9826</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<containerWithKeyObject>1C8A7753-8C72-2AE8-A5E5-1A698CE1E268</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>CA57069E-248A-5A7E-4AEE-7D0EF6871804</localFKIndex>
+<keyObject>6DA8C520-87D1-1A54-1EF6-A6C8B1745E15</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

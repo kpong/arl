@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="1C8A7753-8C72-2AE8-A5E5-1A698CE1E268" name="ARL_notilist" seqName="seg_0"/>
+   <object objectType="Table" objectID="346DC666-73C2-93B7-8A12-C35476E74FEB" name="ARL_employee" seqName="seg_0"/>
+   <object objectType="Table" objectID="9FC236D5-AD50-2D59-EEFE-0600DC96CCC9" name="ARL_member" seqName="seg_0"/>
+   <object objectType="Table" objectID="ABDCBF35-12DB-1DE5-5997-6A0E8C2B0E7B" name="m2m_memlist" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="2980801D-0E6D-864C-85CE-07E9990F7DB8" name="m2m_memlist_ARL_member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="32256BC9-4002-AC0A-E658-4313876DA387" name="ARL_member_ARL_notilist_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="3503C224-CC0C-D16C-32B6-AB75B055D1E9" name="ARL_notilist_ARL_member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="74D834A3-EF6C-1C78-EA53-6C34789707E9" name="ARL_employee_ARL_member_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="9128DC02-E96A-2796-C072-B227665B60B4" name="m2m_memlist_ARL_notilist_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="C32EFB31-A51F-BF94-2F93-8690AD8ED4FA" name="ARL_member_ARL_employee_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

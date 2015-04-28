@@ -1,0 +1,67 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ABDCBF35-12DB-1DE5-5997-6A0E8C2B0E7B" name="m2m_memlist">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>469F73F8-431B-BD3D-490C-81EA59597585</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ARL_member_mem_id" id="7889139F-A886-5DE8-8C4C-7F38507759F8">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>BCACAC95-1F4A-393D-7DB3-1E4D51A3BAB3</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>5F1FF0BD-F67A-F8D2-AA04-9717F7CDD6DB</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2980801D-0E6D-864C-85CE-07E9990F7DB8" referredColumn="5F1FF0BD-F67A-F8D2-AA04-9717F7CDD6DB"/>
+</associations>
+</Column>
+<Column name="ARL_notilist_noti_id" id="9F26E038-017C-8269-6BCB-FECD2A6660E2">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>2A53B8DF-F20D-FAA5-F988-E2591F4C64DE</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>EAAFAEC9-09B5-29ED-728D-ED9F8FBCF667</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9128DC02-E96A-2796-C072-B227665B60B4" referredColumn="EAAFAEC9-09B5-29ED-728D-ED9F8FBCF667"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAD15269-B856-18E2-39EF-3485CDC2D0AA" name="m2m_memlist_ARL_member_FK">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>211429A9-4BCF-0B34-FC7F-32E3B750E205</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7889139F-A886-5DE8-8C4C-7F38507759F8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="25B95CC2-B40E-1398-FE01-A62AB55F337A" name="m2m_memlist_ARL_notilist_FK">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 19:16:39 UTC</createdTime>
+<generatorID>6EE841D7-5EB6-B7CC-BA50-7710D555B25C</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9F26E038-017C-8269-6BCB-FECD2A6660E2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

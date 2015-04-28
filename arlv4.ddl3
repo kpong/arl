@@ -1,0 +1,132 @@
+DROP SEQUENCE ARL_employee_seq ; 
+create sequence ARL_employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARL_employee_PK_trig 
+before insert on ARL_employee
+for each row 
+begin 
+select ARL_employee_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+alter table ARL_employee add created date ; 
+alter table ARL_employee add created_by VARCHAR2 (255) ; 
+alter table ARL_employee add row_version_number integer ; 
+alter table ARL_employee add updated date ; 
+alter table ARL_employee add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARL_employee_AUD_trig 
+before insert or update on ARL_employee 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE ARL_member_seq ; 
+create sequence ARL_member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARL_member_PK_trig 
+before insert on ARL_member
+for each row 
+begin 
+select ARL_member_seq.nextval into :new.mem_id from dual; 
+end; 
+/
+alter table ARL_member add created date ; 
+alter table ARL_member add created_by VARCHAR2 (255) ; 
+alter table ARL_member add row_version_number integer ; 
+alter table ARL_member add updated date ; 
+alter table ARL_member add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARL_member_AUD_trig 
+before insert or update on ARL_member 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP SEQUENCE ARL_notilist_seq ; 
+create sequence ARL_notilist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+
+create or replace trigger ARL_notilist_PK_trig 
+before insert on ARL_notilist
+for each row 
+begin 
+select ARL_notilist_seq.nextval into :new.noti_id from dual; 
+end; 
+/
+alter table ARL_notilist add created date ; 
+alter table ARL_notilist add created_by VARCHAR2 (255) ; 
+alter table ARL_notilist add row_version_number integer ; 
+alter table ARL_notilist add updated date ; 
+alter table ARL_notilist add updated_by VARCHAR2 (255) ; 
+/
+create or replace trigger ARL_notilist_AUD_trig 
+before insert or update on ARL_notilist 
+for each row 
+begin 
+  if inserting then 
+    :new.created := localtimestamp; 
+    :new.created_by := nvl(wwv_flow.g_user,user); 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+    :new.row_version_number := 1; 
+  elsif updating then 
+    :new.row_version_number := nvl(:old.row_version_number,1) + 1; 
+  end if; 
+  if inserting or updating then 
+    :new.updated := localtimestamp; 
+    :new.updated_by := nvl(wwv_flow.g_user,user); 
+  end if; 
+end; 
+/
+
+DROP INDEX ARL_member_mem_id_FK_0 ;
+CREATE INDEX ARL_member_mem_id_FK_0 ON ARL_employee(ARL_member_mem_id) ;
+DROP INDEX ARL_employee_emp_id_FK_1 ;
+CREATE INDEX ARL_employee_emp_id_FK_1 ON ARL_member(ARL_employee_emp_id) ;
+DROP INDEX ARL_notilist_noti_id_FK_2 ;
+CREATE INDEX ARL_notilist_noti_id_FK_2 ON ARL_member(ARL_notilist_noti_id) ;
+DROP INDEX ARL_member_mem_id_FK_3 ;
+CREATE INDEX ARL_member_mem_id_FK_3 ON ARL_notilist(ARL_member_mem_id) ;
+DROP INDEX ARL_member_mem_id_FK_4 ;
+CREATE INDEX ARL_member_mem_id_FK_4 ON m2m_memlist(ARL_member_mem_id) ;
+DROP INDEX ARL_notilist_noti_id_FK_5 ;
+CREATE INDEX ARL_notilist_noti_id_FK_5 ON m2m_memlist(ARL_notilist_noti_id) ;

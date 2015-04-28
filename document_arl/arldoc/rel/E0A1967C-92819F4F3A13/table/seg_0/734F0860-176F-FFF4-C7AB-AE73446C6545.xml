@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="734F0860-176F-FFF4-C7AB-AE73446C6545" name="ARL_Document">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>8C10B9C8-770E-7FC6-479D-57DD98BC8163</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="document_id" id="76418840-526A-9A67-A934-13FBE8E1F9C3">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>F268AEAA-5EAD-6327-72B6-ACC19172D2A2</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_mimetype" id="7F045EC1-04C3-A642-E850-3A37FF2FF1AC">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>C3B93CBC-7D35-C71E-EC2A-F1547E673D1F</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_filename" id="FAA63B2B-76C7-608B-0048-D8B9A866EC74">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>CD678C25-6166-AB3C-FE13-E9A3FAA60807</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_last_update" id="6A1A815F-3E2A-5449-D34D-85D11681944D">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>E750BB90-3FBD-6FF1-594B-16D049AF7BD1</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_charset" id="76BFC4B0-16F8-E56D-840D-EDEB5E0067E7">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>FA0AC843-7320-EFE7-161F-416F89E8FB37</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="attach_file" id="B430728C-6945-9D10-5E3C-993008BE5DB1">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>977A1DCE-0F49-BEBF-9AC8-9815EC3D8DEC</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="86878094-08A4-22D7-33CE-09EFC7C0BACC" name="ARL_Document_PK">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-27 00:04:32 UTC</createdTime>
+<generatorID>D2E307E5-EB88-8277-5646-A86E6C4E46E2</generatorID>
+<ownerDesignName>arldoc</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="76418840-526A-9A67-A934-13FBE8E1F9C3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,63 @@
+DROP SEQUENCE ARL_employee_seq ; 
+create sequence ARL_employee_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARL_employee_PK_trig 
+; 
+
+create or replace trigger ARL_employee_PK_trig 
+before insert on ARL_employee
+for each row 
+begin 
+select ARL_employee_seq.nextval into :new.emp_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARL_member_seq ; 
+create sequence ARL_member_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARL_member_PK_trig 
+; 
+
+create or replace trigger ARL_member_PK_trig 
+before insert on ARL_member
+for each row 
+begin 
+select ARL_member_seq.nextval into :new.mem_id from dual; 
+end; 
+/
+
+DROP SEQUENCE ARL_notilist_seq ; 
+create sequence ARL_notilist_seq 
+start with 100 
+increment by 1 
+nomaxvalue 
+;
+DROP TRIGGER ARL_notilist_PK_trig 
+; 
+
+create or replace trigger ARL_notilist_PK_trig 
+before insert on ARL_notilist
+for each row 
+begin 
+select ARL_notilist_seq.nextval into :new.noti_id from dual; 
+end; 
+/
+
+DROP INDEX ARL_member_mem_id_FK_0 ;
+CREATE INDEX ARL_member_mem_id_FK_0 ON ARL_employee(ARL_member_mem_id) ;
+DROP INDEX ARL_employee_emp_id_FK_1 ;
+CREATE INDEX ARL_employee_emp_id_FK_1 ON ARL_member(ARL_employee_emp_id) ;
+DROP INDEX ARL_notilist_noti_id_FK_2 ;
+CREATE INDEX ARL_notilist_noti_id_FK_2 ON ARL_member(ARL_notilist_noti_id) ;
+DROP INDEX ARL_member_mem_id_FK_3 ;
+CREATE INDEX ARL_member_mem_id_FK_3 ON ARL_notilist(ARL_member_mem_id) ;
+DROP INDEX ARL_member_mem_id_FK_4 ;
+CREATE INDEX ARL_member_mem_id_FK_4 ON m2m_memlist(ARL_member_mem_id) ;
+DROP INDEX ARL_notilist_noti_id_FK_5 ;
+CREATE INDEX ARL_notilist_noti_id_FK_5 ON m2m_memlist(ARL_notilist_noti_id) ;

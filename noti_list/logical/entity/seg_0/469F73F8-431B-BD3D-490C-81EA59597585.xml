@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="469F73F8-431B-BD3D-490C-81EA59597585" name="m2m_memlist">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:33:33 UTC</createdTime>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="mem_id" id="BCACAC95-1F4A-393D-7DB3-1E4D51A3BAB3">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:34:18 UTC</createdTime>
+<generatorID>211429A9-4BCF-0B34-FC7F-32E3B750E205</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>C724A697-B0F1-D137-601E-F1756B174343</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="noti_id" id="2A53B8DF-F20D-FAA5-F988-E2591F4C64DE">
+<createdBy>Sali</createdBy>
+<createdTime>2015-04-21 01:48:13 UTC</createdTime>
+<generatorID>6EE841D7-5EB6-B7CC-BA50-7710D555B25C</generatorID>
+<ownerDesignName>noti_list</ownerDesignName>
+<engineerTo>
+<item key="93603C12-C350-5CDE-D4DF-189291BF6DE0" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>95B11012-5C3B-767E-C0FC-D2EB43EE616A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+</attributes>
+</Entity>

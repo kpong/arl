@@ -1,0 +1,4 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="8C10B9C8-770E-7FC6-479D-57DD98BC8163" name="ARL_Document" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>
